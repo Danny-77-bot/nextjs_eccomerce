@@ -9,6 +9,7 @@ import ProductSlider from '@/components/shared/product/product-slider'
 
 
 export default async function HomePage() {
+  console.log('tested on verce;')
 
    
   const categories = (await getAllCategories()).slice(0, 4)
