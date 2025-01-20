@@ -8,7 +8,10 @@ import data from '@/lib/data'
 
 export default async function HomePage() {
     const carousels = data.carousels;
+   
   const categories = (await getAllCategories()).slice(0, 4)
+  console.log(categories)
+
   const newArrivals = await getProductsForCard({
     tag: 'new-arrival',
     limit: 4,

@@ -8,6 +8,7 @@ export async function getAllCategories() {
   const categories = await Product.find({ isPublished: true }).distinct(
     'category'
   )
+  console.log(categories)
   return categories
 }
 export async function getProductsForCard({
